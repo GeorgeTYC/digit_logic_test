@@ -1,0 +1,24 @@
+module addition(cina,cinb,cout,term,top,clk)
+	input clk;
+	input [3:0]cina,cinb;
+	output [3:0]cout;
+	output top;
+	reg [2:0]term;
+	parameter a='b0;
+	always @(posedge clk)
+		begin
+		add_N add1(cina[0],cinb[0],a,term[0],cout[0]);
+		add_N add2(cina[1],cinb[1],term[0],term[1],cout[1]);
+		add_N add3(cina[2],cinb[2],term[1],term[2],cout[2]);
+		add_N add4(cina[3],cinb[3],term[2],top,cout[3]);
+		
+		
+		end
+endmodule
+
+module add_N(a,b,fro,term1,Cout)
+	input a,b,fro;
+	output term1,Cout;
+	
+	assign {term1,Cout}=a+b+fro;
+endmodule

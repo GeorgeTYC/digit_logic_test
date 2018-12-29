@@ -1,0 +1,161 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'debounce:u1|led'
+Slack : -5.352
+TNS   : -30.994
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -3.693
+TNS   : -67.996
+
+Type  : Slow 1200mV 85C Model Setup 'div_count[10]'
+Slack : -1.839
+TNS   : -12.873
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_count[10]'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'debounce:u1|led'
+Slack : 0.691
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'debounce:u1|led'
+Slack : -1.483
+TNS   : -7.168
+
+Type  : Slow 1200mV 85C Model Removal 'debounce:u1|led'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -53.558
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_count[10]'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:u1|sysclk'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:u2|sysclk'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'debounce:u1|led'
+Slack : 0.380
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'debounce:u1|led'
+Slack : -5.107
+TNS   : -29.550
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.463
+TNS   : -59.855
+
+Type  : Slow 1200mV 0C Model Setup 'div_count[10]'
+Slack : -1.684
+TNS   : -11.788
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_count[10]'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'debounce:u1|led'
+Slack : 0.608
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'debounce:u1|led'
+Slack : -1.406
+TNS   : -6.824
+
+Type  : Slow 1200mV 0C Model Removal 'debounce:u1|led'
+Slack : 0.303
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -53.558
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_count[10]'
+Slack : -1.487
+TNS   : -11.896
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:u1|sysclk'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:u2|sysclk'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'debounce:u1|led'
+Slack : 0.241
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'debounce:u1|led'
+Slack : -1.831
+TNS   : -10.835
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.258
+TNS   : -15.119
+
+Type  : Fast 1200mV 0C Model Setup 'div_count[10]'
+Slack : -0.255
+TNS   : -1.785
+
+Type  : Fast 1200mV 0C Model Hold 'debounce:u1|led'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_count[10]'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'debounce:u1|led'
+Slack : -0.306
+TNS   : -1.033
+
+Type  : Fast 1200mV 0C Model Removal 'debounce:u1|led'
+Slack : 0.246
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -39.176
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_count[10]'
+Slack : -1.000
+TNS   : -8.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:u1|sysclk'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:u2|sysclk'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debounce:u1|led'
+Slack : 0.377
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,25 @@
+module addtion1(clk,cina,cinb,cout,term)
+	input [3:0]term;
+	input clk;
+	input [3:0]cina;
+	input [3:0]cinb;
+	output [4:0]cout;
+	wire ci='b0;
+	always @(posedge clk)
+	begin
+		add f1(cina[0],cinb[0],ci,term[0],cout[0]);
+		add f2(cina[1],cinb[1],term[0],term[1],cout[1]);
+		add f3(cina[2],cinb[2],term[1],term[2],cout[2]);
+		add f4(cina[3],cinb[3],term[2],term[3],cout[3]);
+	end
+endmodule
+
+module add(a,b,fro,Cout,sum)
+	input a;
+	input b;
+	input fro;
+	output Cout;
+	output sum;
+	
+	assign {Cout,sum}<=a+b+fro;
+endmodule

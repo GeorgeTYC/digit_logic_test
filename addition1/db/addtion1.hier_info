@@ -1,0 +1,94 @@
+|addtion1
+clk => div_count[0].CLK
+clk => div_count[1].CLK
+clk => div_count[2].CLK
+clk => div_count[3].CLK
+clk => div_count[4].CLK
+clk => div_count[5].CLK
+clk => div_count[6].CLK
+clk => div_count[7].CLK
+clk => div_count[8].CLK
+clk => div_count[9].CLK
+clk => div_count[10].CLK
+clk => div_count[11].CLK
+clk => div_count[12].CLK
+clk => div_count[13].CLK
+clk => div_count[14].CLK
+clk => div_count[15].CLK
+clk => div_count[16].CLK
+clk => div_count[17].CLK
+clk => div_count[18].CLK
+clk => div_count[19].CLK
+clk => div_count[20].CLK
+clk => div_count[21].CLK
+clk => div_count[22].CLK
+clk => div_count[23].CLK
+clk => div_count[24].CLK
+clk => div_count[25].CLK
+clk => div_count[26].CLK
+clk => div_count[27].CLK
+clk => div_count[28].CLK
+clk => div_count[29].CLK
+clk => div_count[30].CLK
+clk => div_count[31].CLK
+cina[0] => cina[0].IN1
+cina[1] => cina[1].IN1
+cina[2] => cina[2].IN1
+cina[3] => cina[3].IN1
+cinb[0] => cinb[0].IN1
+cinb[1] => cinb[1].IN1
+cinb[2] => cinb[2].IN1
+cinb[3] => cinb[3].IN1
+cout[0] << add:f1.sum
+cout[1] << add:f2.sum
+cout[2] << add:f3.sum
+cout[3] << add:f4.sum
+cout[4] << add:f4.Cout
+term[0] << term[0].DB_MAX_OUTPUT_PORT_TYPE
+term[1] << term[1].DB_MAX_OUTPUT_PORT_TYPE
+term[2] << term[2].DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[0] << digit_seg[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[1] << digit_seg[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[2] << digit_seg[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[3] << digit_seg[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[4] << digit_seg[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[5] << digit_seg[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[6] << digit_seg[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_seg[7] << digit_seg[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+digit_con[0] << digit.DB_MAX_OUTPUT_PORT_TYPE
+digit_con[1] << digit.DB_MAX_OUTPUT_PORT_TYPE
+ci => ci.IN1
+
+
+|addtion1|add:f1
+a => Add0.IN1
+b => Add0.IN2
+fro => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addtion1|add:f2
+a => Add0.IN1
+b => Add0.IN2
+fro => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addtion1|add:f3
+a => Add0.IN1
+b => Add0.IN2
+fro => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|addtion1|add:f4
+a => Add0.IN1
+b => Add0.IN2
+fro => Add1.IN4
+Cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

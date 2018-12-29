@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/intelFPGA_lite/18.0/analog/simulation/qsim
+vanalog
+Z1 !s110 1545791644
+!i10b 1
+!s100 5Iji148FEl1T;XVO3bdom0
+I?S>S337ZLPN1WTKaV5khT3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1545791641
+8analog.vo
+Fanalog.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1545791643.000000
+!s107 analog.vo|
+!s90 -work|work|analog.vo|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vanalog_vlg_vec_tst
+R1
+!i10b 1
+!s100 P_PbE?c6@^FiSIiBJIMnZ0
+IgzzJbNSGe4JY5k33iQ[9Y3
+R2
+R0
+w1545791637
+8Waveform9.vwf.vt
+FWaveform9.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1545791644.000000
+!s107 Waveform9.vwf.vt|
+!s90 -work|work|Waveform9.vwf.vt|
+!i113 1
+R4
+R5

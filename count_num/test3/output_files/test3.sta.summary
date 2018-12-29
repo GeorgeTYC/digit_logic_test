@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1000mV 85C Model Setup 'onMSChange'
+Slack : -2.729
+TNS   : -44.815
+
+Type  : Slow 1000mV 85C Model Setup 'clk'
+Slack : -2.487
+TNS   : -41.075
+
+Type  : Slow 1000mV 85C Model Hold 'clk'
+Slack : 0.508
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Hold 'onMSChange'
+Slack : 0.532
+TNS   : 0.000
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -34.734
+
+Type  : Slow 1000mV 85C Model Minimum Pulse Width 'onMSChange'
+Slack : -1.763
+TNS   : -38.786
+
+Type  : Slow 1000mV 0C Model Setup 'onMSChange'
+Slack : -2.623
+TNS   : -43.060
+
+Type  : Slow 1000mV 0C Model Setup 'clk'
+Slack : -2.346
+TNS   : -39.512
+
+Type  : Slow 1000mV 0C Model Hold 'clk'
+Slack : 0.487
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Hold 'onMSChange'
+Slack : 0.514
+TNS   : 0.000
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -34.734
+
+Type  : Slow 1000mV 0C Model Minimum Pulse Width 'onMSChange'
+Slack : -1.763
+TNS   : -38.786
+
+Type  : Fast 1000mV 0C Model Setup 'onMSChange'
+Slack : -1.099
+TNS   : -16.117
+
+Type  : Fast 1000mV 0C Model Setup 'clk'
+Slack : -0.954
+TNS   : -14.988
+
+Type  : Fast 1000mV 0C Model Hold 'clk'
+Slack : 0.274
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Hold 'onMSChange'
+Slack : 0.285
+TNS   : 0.000
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -34.734
+
+Type  : Fast 1000mV 0C Model Minimum Pulse Width 'onMSChange'
+Slack : -1.763
+TNS   : -38.786
+
+------------------------------------------------------------

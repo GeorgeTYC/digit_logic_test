@@ -1,0 +1,17 @@
+module analog(clk,key_in,key_out);
+	input key_in;
+	input clk;
+	output reg key_out;
+	reg [19:0]tcnt1;
+	
+	always @(posedge clk or negedge key_in)
+	begin
+	if(!key_in)tcnt1<=20'd0;
+	else tcnt1<=tcnt1+1;
+	end
+	always @(posedge clk or negedge key_in)
+	begin
+	if(!key_in)key_out<=0;
+		else if(tcnt1==20'hfffff)key_out<=key_in;
+	end
+endmodule
