@@ -1,0 +1,178 @@
+Log started 10/27/2018 at 16:10:12
+Preferred installation mode : qt
+Trying to init installer in mode qt
+Mode qt successfully initialized
+Preparing to Install
+Preparing to Install
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Installing Quartus Prime Help...
+Executing D:\Quartus-lite-18.0.0.614-windows\components/QuartusHelpSetup-18.0.0.614-windows.exe --mode unattended --unattendedmodeui minimal --installdir "D:\intelFPGA_lite\18.0"  --product_copy_name "none" --startmenugroup_name "Intel FPGA 18.0.0.614 Lite Edition"  --startmenufolder_name "Quartus Prime Lite Edition 18.0.0.614" --launch_from_quartus 1
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Installing Arria II...
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/unzip.exe -q -o "D:\Quartus-lite-18.0.0.614-windows\components/arria_lite-18.0.0.614.qdz"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Installing Cyclone IV...
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/unzip.exe -q -o "D:\Quartus-lite-18.0.0.614-windows\components/cyclone-18.0.0.614.qdz"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Installing Cyclone 10 LP...
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/unzip.exe -q -o "D:\Quartus-lite-18.0.0.614-windows\components/cyclone10lp-18.0.0.614.qdz"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Installing Cyclone V...
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/unzip.exe -q -o "D:\Quartus-lite-18.0.0.614-windows\components/cyclonev-18.0.0.614.qdz"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Installing MAX II/V...
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/unzip.exe -q -o "D:\Quartus-lite-18.0.0.614-windows\components/max-18.0.0.614.qdz"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Installing MAX 10 FPGA...
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/unzip.exe -q -o "D:\Quartus-lite-18.0.0.614-windows\components/max10-18.0.0.614.qdz"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Unpacking files
+Unpacking files
+Installing ModelSim - Intel FPGA Starter Edition (Free)...
+Executing D:\Quartus-lite-18.0.0.614-windows\components/ModelSimSetup-18.0.0.614-windows.exe --mode unattended --unattendedmodeui minimal --installdir "D:\intelFPGA_lite\18.0" --modelsim_edition modelsim_ase --product_copy_name "none" --startmenugroup_name "Intel FPGA 18.0.0.614 Lite Edition"  --launch_from_quartus 1
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Executing D:\intelFPGA_lite\18.0/vcredist2013_x64.exe /q /norestart
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Executing D:\intelFPGA_lite\18.0/vcredist2010_x64.exe /q /norestart
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Added QSYS_ROOTDIR environment variable with value D:\intelFPGA_lite\18.0\quartus\sopc_builder\bin in scope user
+Broadcasting environment changes
+Creating Uninstaller
+Creating uninstaller 25%
+Creating uninstaller 50%
+Creating uninstaller 75%
+Creating uninstaller 100%
+Installation completed
+Log finished 10/27/2018 at 17:08:00
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/qreg.exe --force --setqdir --file_assoc --jtag &
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Executing D:\intelFPGA_lite\18.0/quartus/drivers/DPInst.exe /path usb-blaster-ii 
+Script exit code: 256
+
+Script output:
+ 
+
+Script stderr:
+ Program ended with an error exit code
+
+Error running D:\intelFPGA_lite\18.0/quartus/drivers/DPInst.exe /path usb-blaster-ii : Program ended with an error exit code
+Executing D:\intelFPGA_lite\18.0/quartus/bin64/quartus.exe  &
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+

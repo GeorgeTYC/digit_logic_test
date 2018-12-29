@@ -1,0 +1,21 @@
+intial
+	reg anwser=6b'000000;
+
+module dig_lock(switch,led)
+input reg [7:0]switch;
+input reg [0]led;
+led=0;
+reg count=1'd0;
+
+for(reg term=1'd0;term<6;term=term+1)
+{
+
+	if(switch[term]==answer[term])
+		count=count+1;
+}
+
+if(count==6&&switch[6])
+		led=1;
+if(switch[7])
+led=0;
+endmodule

@@ -1,0 +1,85 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clks'
+Slack : -23.470
+TNS   : -182.450
+
+Type  : Setup 'clk_Hz'
+Slack : -16.374
+TNS   : -294.067
+
+Type  : Setup 'debounce1:m5|key_sec[0]'
+Slack : -14.809
+TNS   : -169.671
+
+Type  : Setup 'clk'
+Slack : -11.911
+TNS   : -1045.507
+
+Type  : Setup 'frequency_divider:u1|time_count[0]'
+Slack : -11.111
+TNS   : -52.961
+
+Type  : Setup 'start'
+Slack : -5.386
+TNS   : -17.705
+
+Type  : Hold 'debounce1:m5|key_sec[0]'
+Slack : -5.235
+TNS   : -45.385
+
+Type  : Hold 'clk'
+Slack : -2.297
+TNS   : -6.020
+
+Type  : Hold 'frequency_divider:u1|time_count[0]'
+Slack : -1.823
+TNS   : -1.823
+
+Type  : Hold 'start'
+Slack : -0.850
+TNS   : -0.850
+
+Type  : Hold 'clk_Hz'
+Slack : 1.038
+TNS   : 0.000
+
+Type  : Hold 'clks'
+Slack : 1.138
+TNS   : 0.000
+
+Type  : Recovery 'frequency_divider:u1|time_count[0]'
+Slack : -8.905
+TNS   : -32.401
+
+Type  : Removal 'frequency_divider:u1|time_count[0]'
+Slack : -0.971
+TNS   : -2.801
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'start'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'debounce1:m5|key_sec[0]'
+Slack : -0.895
+TNS   : -14.240
+
+Type  : Minimum Pulse Width 'clk_Hz'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clks'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'frequency_divider:u1|time_count[0]'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

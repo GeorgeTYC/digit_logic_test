@@ -1,0 +1,506 @@
+Analysis & Synthesis report for migong
+Sat Dec 22 16:43:17 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: debounce1:m5
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sat Dec 22 16:43:16 2018       ;
+; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Revision Name               ; migong                                      ;
+; Top-level Entity Name       ; migong                                      ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 568                                         ;
+; Total pins                  ; 49                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM1270T144C5      ;                    ;
+; Top-level entity name                                            ; migong             ; migong             ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                         ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path           ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+; migong.v                         ; yes             ; User Verilog HDL File  ; D:/intelFPGA_lite/18.0/migong/migong.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 568   ;
+;     -- Combinational with no register       ; 367   ;
+;     -- Register only                        ; 69    ;
+;     -- Combinational with a register        ; 132   ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 214   ;
+;     -- 3 input functions                    ; 68    ;
+;     -- 2 input functions                    ; 200   ;
+;     -- 1 input functions                    ; 17    ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 428   ;
+;     -- arithmetic mode                      ; 140   ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 34    ;
+;     -- asynchronous clear/load mode         ; 57    ;
+;                                             ;       ;
+; Total registers                             ; 201   ;
+; Total logic cells in carry chains           ; 148   ;
+; I/O pins                                    ; 49    ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 159   ;
+; Total fan-out                               ; 1972  ;
+; Average fan-out                             ; 3.20  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                               ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name          ; Entity Name       ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------+-------------------+--------------+
+; |migong                    ; 568 (395)   ; 201          ; 0          ; 49   ; 0            ; 367 (289)    ; 69 (41)           ; 132 (65)         ; 148 (72)        ; 0 (0)      ; |migong                      ; migong            ; work         ;
+;    |debounce1:m5|          ; 50 (50)     ; 36           ; 0          ; 0    ; 0            ; 14 (14)      ; 8 (8)             ; 28 (28)          ; 20 (20)         ; 0 (0)      ; |migong|debounce1:m5         ; debounce1         ; work         ;
+;    |debounce:m4|           ; 27 (27)     ; 21           ; 0          ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 21 (21)          ; 19 (19)         ; 0 (0)      ; |migong|debounce:m4          ; debounce          ; work         ;
+;    |frequency_divider:u1|  ; 96 (96)     ; 38           ; 0          ; 0    ; 0            ; 58 (58)      ; 20 (20)           ; 18 (18)          ; 37 (37)         ; 0 (0)      ; |migong|frequency_divider:u1 ; frequency_divider ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------+-------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                         ;
++-----------------------------------------------------+------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal          ; Free of Timing Hazards ;
++-----------------------------------------------------+------------------------------+------------------------+
+; step_cnt[3]                                         ; step_cnt[0]                  ; yes                    ;
+; step_cnt[4]                                         ; step_cnt[0]                  ; yes                    ;
+; step_cnt[6]                                         ; step_cnt[0]                  ; yes                    ;
+; step_cnt[5]                                         ; step_cnt[0]                  ; yes                    ;
+; step_cnt[2]                                         ; step_cnt[0]                  ; yes                    ;
+; step_cnt[1]                                         ; step_cnt[0]                  ; yes                    ;
+; location_col_num[0]                                 ; location_col_num[1]          ; yes                    ;
+; location_col_num[1]                                 ; location_col_num[1]          ; yes                    ;
+; location_col_num[2]                                 ; location_col_num[1]          ; yes                    ;
+; location_row_num[1]                                 ; location_row_num[0]          ; yes                    ;
+; location_row_num[2]                                 ; location_row_num[0]          ; yes                    ;
+; location_row_num[0]                                 ; location_row_num[0]          ; yes                    ;
+; frequency_divider:u1|time1[4]                       ; frequency_divider:u1|WideOr0 ; yes                    ;
+; frequency_divider:u1|time1[3]                       ; frequency_divider:u1|WideOr0 ; yes                    ;
+; frequency_divider:u1|time1[2]                       ; frequency_divider:u1|WideOr0 ; yes                    ;
+; frequency_divider:u1|time1[1]                       ; frequency_divider:u1|WideOr0 ; yes                    ;
+; frequency_divider:u1|time1[0]                       ; frequency_divider:u1|WideOr0 ; yes                    ;
+; step_cnt[0]                                         ; step_cnt[0]                  ; yes                    ;
+; Number of user-specified and inferred latches = 18  ;                              ;                        ;
++-----------------------------------------------------+------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; frequency_divider:u1|ten[2,3]          ; Stuck at GND due to stuck port data_in ;
+; map_row[6][7]                          ; Merged with terminal_point_col[0]      ;
+; map_row[3][3]                          ; Merged with terminal_point_col[0]      ;
+; terminal_point_col[1]                  ; Merged with terminal_point_col[0]      ;
+; map_row[0][2]                          ; Merged with terminal_point_col[0]      ;
+; start_point_row[0]                     ; Merged with terminal_point_col[0]      ;
+; map_row[4][5]                          ; Merged with terminal_point_col[0]      ;
+; map_row[0][1]                          ; Merged with terminal_point_col[0]      ;
+; map_row[0][0]                          ; Merged with terminal_point_col[0]      ;
+; terminal_point_col[2]                  ; Merged with terminal_point_col[0]      ;
+; map_row[1][2]                          ; Merged with terminal_point_col[0]      ;
+; terminal_point_row[0]                  ; Merged with terminal_point_col[0]      ;
+; map_row[6][3]                          ; Merged with terminal_point_row[1]      ;
+; map_row[1][5]                          ; Merged with terminal_point_row[1]      ;
+; map_row[1][3]                          ; Merged with terminal_point_row[1]      ;
+; map_row[3][1]                          ; Merged with terminal_point_row[1]      ;
+; terminal_point_row[2]                  ; Merged with terminal_point_row[1]      ;
+; map_row[4][1]                          ; Merged with terminal_point_row[1]      ;
+; map_row[5][1]                          ; Merged with terminal_point_row[1]      ;
+; map_row[6][1]                          ; Merged with terminal_point_row[1]      ;
+; map_row[6][5]                          ; Merged with terminal_point_row[1]      ;
+; map_row[6][4]                          ; Merged with terminal_point_row[1]      ;
+; map_row[1][4]                          ; Merged with terminal_point_row[1]      ;
+; map_row[6][6]                          ; Merged with terminal_point_row[1]      ;
+; map_row[1][6]                          ; Merged with terminal_point_row[1]      ;
+; map_row[2][6]                          ; Merged with terminal_point_row[1]      ;
+; map_row[3][2]                          ; Merged with terminal_point_row[1]      ;
+; map_row[3][4]                          ; Merged with terminal_point_row[1]      ;
+; map_row[3][6]                          ; Merged with terminal_point_row[1]      ;
+; map_row[4][4]                          ; Merged with terminal_point_row[1]      ;
+; map_row[4][6]                          ; Merged with terminal_point_row[1]      ;
+; map_row[6][2]                          ; Merged with terminal_point_row[1]      ;
+; map_row[4][3]                          ; Merged with start_point_col[0]         ;
+; map_row[7][6]                          ; Merged with start_point_col[0]         ;
+; map_row[1][7]                          ; Merged with start_point_col[0]         ;
+; map_row[1][1]                          ; Merged with start_point_col[0]         ;
+; map_row[2][2]                          ; Merged with start_point_col[0]         ;
+; map_row[2][3]                          ; Merged with start_point_col[0]         ;
+; map_row[2][5]                          ; Merged with start_point_col[0]         ;
+; map_row[5][4]                          ; Merged with start_point_col[0]         ;
+; map_row[4][7]                          ; Merged with start_point_col[1]         ;
+; map_row[3][7]                          ; Merged with start_point_col[1]         ;
+; start_point_row[2]                     ; Merged with start_point_col[1]         ;
+; map_row[7][2]                          ; Merged with start_point_col[1]         ;
+; map_row[5][7]                          ; Merged with start_point_col[1]         ;
+; map_row[0][7]                          ; Merged with start_point_col[1]         ;
+; map_row[7][7]                          ; Merged with start_point_col[1]         ;
+; map_row[5][3]                          ; Merged with start_point_col[1]         ;
+; map_row[0][3]                          ; Merged with start_point_col[1]         ;
+; map_row[6][0]                          ; Merged with start_point_col[1]         ;
+; map_row[7][3]                          ; Merged with start_point_col[1]         ;
+; map_row[0][6]                          ; Merged with start_point_col[1]         ;
+; map_row[2][1]                          ; Merged with start_point_col[1]         ;
+; map_row[3][5]                          ; Merged with start_point_col[1]         ;
+; map_row[5][6]                          ; Merged with start_point_col[1]         ;
+; map_row[5][5]                          ; Merged with start_point_col[1]         ;
+; map_row[0][5]                          ; Merged with start_point_col[1]         ;
+; map_row[7][1]                          ; Merged with start_point_col[1]         ;
+; map_row[7][5]                          ; Merged with start_point_col[1]         ;
+; map_row[2][0]                          ; Merged with start_point_col[1]         ;
+; map_row[7][0]                          ; Merged with start_point_col[1]         ;
+; map_row[2][4]                          ; Merged with start_point_col[1]         ;
+; map_row[3][0]                          ; Merged with start_point_col[1]         ;
+; map_row[7][4]                          ; Merged with start_point_col[1]         ;
+; map_row[4][0]                          ; Merged with start_point_col[1]         ;
+; start_point_col[2]                     ; Merged with start_point_col[1]         ;
+; map_row[4][2]                          ; Merged with start_point_col[1]         ;
+; map_row[0][4]                          ; Merged with start_point_col[1]         ;
+; start_point_row[1]                     ; Merged with start_point_col[1]         ;
+; map_row[5][2]                          ; Merged with start_point_col[1]         ;
+; map_row[5][0]                          ; Merged with start_point_col[1]         ;
+; map_row[1][0]                          ; Merged with start_point_col[1]         ;
+; map_row[2][7]                          ; Merged with start_point_col[1]         ;
+; row[0]~reg0                            ; Merged with digit_con[0]~reg0          ;
+; row[1]~reg0                            ; Merged with digit_con[1]~reg0          ;
+; row[2]~reg0                            ; Merged with digit_con[2]~reg0          ;
+; row[3]~reg0                            ; Merged with digit_con[3]~reg0          ;
+; row[4]~reg0                            ; Merged with digit_con[4]~reg0          ;
+; row[5]~reg0                            ; Merged with digit_con[5]~reg0          ;
+; row[6]~reg0                            ; Merged with digit_con[6]~reg0          ;
+; row[7]~reg0                            ; Merged with digit_con[7]~reg0          ;
+; terminal_point_row[1]                  ; Stuck at GND due to stuck port data_in ;
+; start_point_col[1]                     ; Stuck at VCC due to stuck port data_in ;
+; start_point_col[0]                     ; Merged with terminal_point_col[0]      ;
+; row_num[3]                             ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 86 ;                                        ;
++----------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 201   ;
+; Number of registers using Synchronous Clear  ; 20    ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 57    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 89    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; debounce1:m5|key_sec[1]                 ; 2       ;
+; debounce1:m5|key_sec_pre[1]             ; 1       ;
+; debounce1:m5|key_sec[0]                 ; 2       ;
+; debounce1:m5|key_sec_pre[0]             ; 1       ;
+; debounce1:m5|key_sec[2]                 ; 2       ;
+; debounce1:m5|key_sec_pre[2]             ; 1       ;
+; debounce1:m5|key_sec[3]                 ; 3       ;
+; debounce1:m5|key_sec_pre[3]             ; 2       ;
+; debounce1:m5|key_rst[0]                 ; 2       ;
+; debounce1:m5|key_rst_pre[0]             ; 1       ;
+; debounce1:m5|key_rst[2]                 ; 2       ;
+; debounce1:m5|key_rst[3]                 ; 2       ;
+; debounce1:m5|key_rst_pre[2]             ; 1       ;
+; debounce1:m5|key_rst_pre[3]             ; 1       ;
+; debounce1:m5|key_rst[1]                 ; 2       ;
+; debounce1:m5|key_rst_pre[1]             ; 1       ;
+; Total number of inverted registers = 16 ;         ;
++-----------------------------------------+---------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |migong|terminal_point_col[0] ;
+; 16:1               ; 8 bits    ; 80 LEs        ; 40 LEs               ; 40 LEs                 ; Yes        ; |migong|digit_con[7]~reg0     ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |migong|g_col[7]~reg0         ;
+; 14:1               ; 6 bits    ; 54 LEs        ; 42 LEs               ; 12 LEs                 ; Yes        ; |migong|g_col[2]~reg0         ;
+; 36:1               ; 7 bits    ; 168 LEs       ; 161 LEs              ; 7 LEs                  ; Yes        ; |migong|digit_seg0[7]~reg0    ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |migong|location_col_num[1]   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |migong|location_row_num[1]   ;
+; 9:1                ; 7 bits    ; 42 LEs        ; 7 LEs                ; 35 LEs                 ; No         ; |migong|step_cnt[3]           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------+
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: debounce1:m5 ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; N              ; 4     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sat Dec 22 16:42:42 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off migong -c migong
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 4 design units, including 4 entities, in source file migong.v
+    Info (12023): Found entity 1: migong File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 1
+    Info (12023): Found entity 2: frequency_divider File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 438
+    Info (12023): Found entity 3: debounce File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 503
+    Info (12023): Found entity 4: debounce1 File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 522
+Info (12127): Elaborating entity "migong" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at migong.v(229): object "g_row_info" assigned a value but never read File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 229
+Warning (10230): Verilog HDL assignment warning at migong.v(118): truncated value with size 32 to match size of target (7) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 118
+Warning (10230): Verilog HDL assignment warning at migong.v(119): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 119
+Warning (10230): Verilog HDL assignment warning at migong.v(126): truncated value with size 32 to match size of target (7) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 126
+Warning (10230): Verilog HDL assignment warning at migong.v(127): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 127
+Warning (10230): Verilog HDL assignment warning at migong.v(134): truncated value with size 32 to match size of target (7) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 134
+Warning (10230): Verilog HDL assignment warning at migong.v(135): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 135
+Warning (10230): Verilog HDL assignment warning at migong.v(142): truncated value with size 32 to match size of target (7) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 142
+Warning (10230): Verilog HDL assignment warning at migong.v(143): truncated value with size 32 to match size of target (3) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 143
+Warning (10240): Verilog HDL Always Construct warning at migong.v(101): inferring latch(es) for variable "step_cnt", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Warning (10240): Verilog HDL Always Construct warning at migong.v(101): inferring latch(es) for variable "location_row_num", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Warning (10240): Verilog HDL Always Construct warning at migong.v(101): inferring latch(es) for variable "location_col_num", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Warning (10230): Verilog HDL assignment warning at migong.v(167): truncated value with size 32 to match size of target (25) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 167
+Warning (10230): Verilog HDL assignment warning at migong.v(178): truncated value with size 32 to match size of target (20) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 178
+Warning (10230): Verilog HDL assignment warning at migong.v(187): truncated value with size 32 to match size of target (4) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 187
+Warning (10230): Verilog HDL assignment warning at migong.v(238): truncated value with size 32 to match size of target (20) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 238
+Info (10041): Inferred latch for "location_col_num[0]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "location_col_num[1]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "location_col_num[2]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "location_row_num[0]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "location_row_num[1]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "location_row_num[2]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "step_cnt[0]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "step_cnt[1]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "step_cnt[2]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "step_cnt[3]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "step_cnt[4]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "step_cnt[5]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (10041): Inferred latch for "step_cnt[6]" at migong.v(101) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:m4" File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 90
+Warning (10230): Verilog HDL assignment warning at migong.v(512): truncated value with size 32 to match size of target (20) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 512
+Info (12128): Elaborating entity "debounce1" for hierarchy "debounce1:m5" File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 91
+Info (12128): Elaborating entity "frequency_divider" for hierarchy "frequency_divider:u1" File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 407
+Warning (10036): Verilog HDL or VHDL warning at migong.v(446): object "time1_temp" assigned a value but never read File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 446
+Warning (10235): Verilog HDL Always Construct warning at migong.v(454): variable "time1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 454
+Warning (10230): Verilog HDL assignment warning at migong.v(454): truncated value with size 32 to match size of target (5) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 454
+Warning (10240): Verilog HDL Always Construct warning at migong.v(448): inferring latch(es) for variable "time1", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+Warning (10240): Verilog HDL Always Construct warning at migong.v(460): inferring latch(es) for variable "a", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 460
+Warning (10646): Verilog HDL Event Control warning at migong.v(484): posedge or negedge of vector "time1" depends solely on its least-significant bit File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 484
+Info (10041): Inferred latch for "a" at migong.v(460) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 460
+Info (10041): Inferred latch for "time1[0]" at migong.v(448) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+Info (10041): Inferred latch for "time1[1]" at migong.v(448) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+Info (10041): Inferred latch for "time1[2]" at migong.v(448) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+Info (10041): Inferred latch for "time1[3]" at migong.v(448) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+Info (10041): Inferred latch for "time1[4]" at migong.v(448) File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+Warning (13012): Latch step_cnt[3] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debounce1:m5|key_pulse[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 528
+Warning (13012): Latch step_cnt[4] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debounce1:m5|key_pulse[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 528
+Warning (13012): Latch step_cnt[6] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debounce1:m5|key_pulse[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 528
+Warning (13012): Latch step_cnt[5] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debounce1:m5|key_pulse[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 528
+Warning (13012): Latch step_cnt[2] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debounce1:m5|key_pulse[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 528
+Warning (13012): Latch step_cnt[1] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debounce1:m5|key_pulse[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 528
+Warning (13012): Latch location_col_num[0] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal terminal_point_col[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 58
+Warning (13012): Latch location_col_num[1] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal location_col_num[1] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Warning (13012): Latch location_col_num[2] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal location_col_num[2] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Warning (13012): Latch location_row_num[1] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal location_row_num[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Warning (13012): Latch location_row_num[2] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal location_row_num[2] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+Warning (13012): Latch location_row_num[0] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal terminal_point_col[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 58
+Warning (13012): Latch frequency_divider:u1|time1[4] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal frequency_divider:u1|WideOr0 File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 461
+Warning (13012): Latch frequency_divider:u1|time1[3] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal frequency_divider:u1|WideOr0 File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 461
+Warning (13012): Latch frequency_divider:u1|time1[2] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal frequency_divider:u1|WideOr0 File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 461
+Warning (13012): Latch frequency_divider:u1|time1[1] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 448
+    Warning (13013): Ports ENA and PRE on the latch are fed by the same signal frequency_divider:u1|WideOr0 File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 461
+Warning (13012): Latch step_cnt[0] has unsafe behavior File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 101
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debounce1:m5|key_pulse[0] File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 528
+Info (18000): Registers with preset signals will power-up high File: D:/intelFPGA_lite/18.0/migong/migong.v Line: 572
+Info (21057): Implemented 617 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 568 logic cells
+Info (144001): Generated suppressed messages file D:/intelFPGA_lite/18.0/migong/output_files/migong.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 58 warnings
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Sat Dec 22 16:43:17 2018
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:01:08
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/intelFPGA_lite/18.0/migong/output_files/migong.map.smsg.
+
+

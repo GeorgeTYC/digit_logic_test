@@ -1,0 +1,59 @@
+Log started 10/27/2018 at 17:00:35
+Preferred installation mode : unattended
+Trying to init installer in mode unattended
+Mode unattended successfully initialized
+Preparing to Install
+Preparing to Install
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Unpacking files
+Installing ModelSim - Intel FPGA Verilog model files...
+Executing D:\intelFPGA_lite\18.0/modelsim_ase/unzip.exe -q -o "D:\intelFPGA_lite\18.0/modelsim_ase/altera/modelsim_altera_verilog.zip"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Unpacking files
+Installing ModelSim - Intel FPGA VHDL model files...
+Executing D:\intelFPGA_lite\18.0/modelsim_ase/unzip.exe -q -o "D:\intelFPGA_lite\18.0/modelsim_ase/altera/modelsim_altera_vhdl.zip"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Executing D:\intelFPGA_lite\18.0/vcredist2013_x86.exe /q /norestart
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Executing D:\intelFPGA_lite\18.0/vcredist2010_x86.exe /q /norestart
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Adding D:\intelFPGA_lite\18.0\modelsim_ase\win32aloem to System Path
+Broadcasting environment changes
+Creating Uninstaller
+Creating uninstaller 25%
+Creating uninstaller 50%
+Creating uninstaller 75%
+Creating uninstaller 100%
+Installation completed
+Log finished 10/27/2018 at 17:06:40

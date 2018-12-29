@@ -1,0 +1,26 @@
+Log started 10/27/2018 at 16:55:08
+Preferred installation mode : unattended
+Trying to init installer in mode unattended
+Mode unattended successfully initialized
+Preparing to Install
+Preparing to Install
+Unpacking files
+Unpacking files
+Unpacking files
+Installing Quartus Prime Help files...
+Executing D:\intelFPGA_lite\18.0/quartus/common/help/unzip.exe -q -o "D:\intelFPGA_lite\18.0/quartus/common/help/webhelp.zip"
+Script exit code: 0
+
+Script output:
+ 
+
+Script stderr:
+ 
+
+Creating Uninstaller
+Creating uninstaller 25%
+Creating uninstaller 50%
+Creating uninstaller 75%
+Creating uninstaller 100%
+Installation completed
+Log finished 10/27/2018 at 16:57:20

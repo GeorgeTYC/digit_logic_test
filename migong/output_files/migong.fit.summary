@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Dec 22 16:43:30 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : migong
+Top-level Entity Name : migong
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 536 / 1,270 ( 42 % )
+Total pins : 49 / 116 ( 42 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

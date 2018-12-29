@@ -1,0 +1,15 @@
+|dig_lock
+clk => led~reg0.CLK
+switch[0] => Equal0.IN7
+switch[1] => Equal0.IN6
+switch[2] => Equal0.IN5
+switch[3] => Equal0.IN4
+switch[4] => Equal0.IN3
+switch[5] => Equal0.IN2
+switch[6] => Equal0.IN1
+switch[7] => Equal0.IN0
+led << led~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key => always0.IN1
+res_but => always0.IN1
+
+

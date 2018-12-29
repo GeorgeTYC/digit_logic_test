@@ -1,0 +1,61 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'clk'
+Slack : -29.634
+TNS   : -1400.600
+
+Type  : Setup 'lattice_on:l1|clk_1kHz'
+Slack : -8.368
+TNS   : -157.519
+
+Type  : Setup 'digit_tube:l2|clk_1kHz'
+Slack : -7.873
+TNS   : -95.036
+
+Type  : Setup 'countdown:l3|div_clk'
+Slack : -5.211
+TNS   : -20.774
+
+Type  : Hold 'clk'
+Slack : -2.545
+TNS   : -7.430
+
+Type  : Hold 'digit_tube:l2|clk_1kHz'
+Slack : 0.989
+TNS   : 0.000
+
+Type  : Hold 'lattice_on:l1|clk_1kHz'
+Slack : 1.330
+TNS   : 0.000
+
+Type  : Hold 'countdown:l3|div_clk'
+Slack : 1.665
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'clk'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'countdown:l3|div_clk'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'digit_tube:l2|clk_1kHz'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'digit_tube:l2|sw:b1|key_out'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'lattice_on:l1|clk_1kHz'
+Slack : 0.234
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'lattice_on:l1|sw:a1|key_out'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

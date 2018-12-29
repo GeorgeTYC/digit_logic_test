@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Dec 21 11:06:57 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : countdown
+Top-level Entity Name : countdown
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 183 / 1,270 ( 14 % )
+Total pins : 26 / 116 ( 22 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

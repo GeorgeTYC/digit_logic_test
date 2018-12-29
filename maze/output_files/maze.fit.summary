@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Dec 28 08:08:41 2018
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : maze
+Top-level Entity Name : maze
+Family : MAX II
+Device : EPM1270T144C5
+Timing Models : Final
+Total logic elements : 478 / 1,270 ( 38 % )
+Total pins : 47 / 116 ( 41 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
